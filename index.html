@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>안다 베타테스트</title>
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+    <style>
+        /* 헤더 스타일 */
+        header {
+            background-color: #333;
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* 본문 스타일 */
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        p {
+            font-size: 16px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 10%;
+            height: auto;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+    <script>
+        // 예시 JavaScript 기능
+        var heading = document.querySelector('h2');
+        var changeColorBtn = document.getElementById('changeColorBtn');
+
+        changeColorBtn.addEventListener('click', function () {
+            var randomColor = getRandomColor();
+            heading.style.color = randomColor;
+        });
+
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>베타테스터 여러분 환영합니다!</h1>
+    </header>
+
+    <main>
+        <h2>앱 다운 링크</h2>
+        <p>로고를 클릭하여 애플리케이션을 다운로드하세요!</p>
+        <a href="anda_beta.apk" download>
+            <img src="image.jpg" alt="이미지">
+        </a>
+    </main>
+</body>
+
+</html>
