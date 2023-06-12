@@ -5,7 +5,7 @@
     <title>안다 베타테스트</title>
     <link rel="icon" href="logo.ico" type="image/x-icon">
     <style>
-        /* 헤더 스타일 */
+        /* 공통 스타일 */
         header {
             background-color: #333;
             padding: 20px;
@@ -35,7 +35,6 @@
             font-weight: bold;
         }
 
-        /* 본문 스타일 */
         main {
             padding: 20px;
             text-align: center;
@@ -69,6 +68,13 @@
 
         button:hover {
             background-color: #555;
+        }
+
+        /* 모바일 스타일 */
+        @media screen and (max-width: 600px) {
+            img {
+                max-width: 50%;
+            }
         }
     </style>
     <script>
